@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    color-scheme: light dark;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(218, 23%, 16%);
+    
+}
+main{
+    width: 500px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    color: hsl(193, 38%, 86%);
+    background-color: hsl(217, 19%, 38%);
+    background-color: hsl(217, 19%, 24%);
+    box-shadow: 0px 3px 3px hsl(218, 23%, 16%) ;
+    transition: left 0.5s; 
+}
+header{
+    display: flex;
+    padding-top: 35px;
+}
+header p {
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: hsl(150, 100%, 66%);
+}
+#advice-id{
+    margin-left: 10px;
+}
+#advice{
+    width: 440px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+#generate{
+    /* padding: 20px; */
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);;
+    width: 50px ;
+    height: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -27px;
+
+}
+.mobile-divider{
+
+    display: none;
+}
+@media only screen and (max-width: 520px){
+    main{
+        width: 330px;
+    }
+    .desktop-divider{
+        display: none;
+    }
+    .mobile-divider{
+        display: block;
+    }
+    #advice{
+        width: 290px;
+        font-size: 21px;
+    }
+    header p{
+        font-size: 10px;
+    }
+}
